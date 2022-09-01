@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1"/>
+	<title>機台管理</title>
+	<style type="text/css">
+		.head{
+			background-color:#003344;color:white;font-weight:bold;font-size:50px;
+			text-align:center;padding:20px;margin-left:auto;margin-right:auto;
+		}
+		
+		.box{
+			width:600px;height:500px;padding:20px;margin:10px;background-color:white;
+            margin-left:auto;margin-right:auto;text-align:center;
+			
+		}
+		.title{
+			font-weight:bold;font-size:35px;text-align:center;
+		}
+		.second{
+			margin-left:12em;
+		}
+		
+		.secsize{
+			font-weight:bold;font-size:20px;text-align:center;padding:3px
+		}
+		
+		@media screen and (max-width:1250px){
+			.head{flex:none;width:90%;justify-content:center;}
+			.box{flex:none;width:70%;justify-content:center;}
+			.second{margin-left:0px;font-size:20px;}
+			
+			
+		}
+		@media screen and (max-width:500px){
+			.head{flex:none;width:90%;justify-content:center;}
+			.box{flex:none;width:90%;justify-content:center;}
+			.second{margin-left:0px;font-size:20px;}
+			
+		}
+		
+	</style>
+</head>
+<body style="margin:0px;background-color:#eeeeee;">
+	<div class="head">生產管理系統(Manufactory)</div>
+	
+				
+	<div class="box">
+		<div class="title">機台管理介面(Quantity)</div>
+		
+		<hr></hr>
+		
+        
+        <br>
+		<input class="secsize" type="date" >
+        <br>
+		<br>
+        
+		<select class="secsize">
+			<option>請選擇機台(NO.)</option>
+			<option>加工NO.01</option>
+			<option>加工NO.02</option>
+			<option>加工NO.03</option>
+			<option>加工NO.04</option>
+			<option>加工NO.05</option>
+			<option>加工NO.06</option>
+			<option>加工NO.07</option>
+			<option>加工NO.08</option>
+			<option>加工NO.09</option>
+			<option>加工NO.10</option>
+
+		</select>
+        <!-- <input class="secsize" type="password" placeholder="請輸入密碼(password)"> -->
+		<br>
+        <br>
+		<textarea >生產總數_Total...</textarea>
+		<br>
+        <br>
+		<textarea >異常數字_NG...</textarea>
+		<br>
+        <br>
+		<textarea >備註...</textarea>
+        <br>
+        <br>
+        
+		<span class="second"></span><input class="secsize" type="file" >
+		<br>
+        <br>
+		<button class="secsize" type="button">上傳(Upload)</button>
+	</div>  
+    
+	
+</body>
+</html>
