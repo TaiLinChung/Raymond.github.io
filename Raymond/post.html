@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1"/>
+	<title>電子公佈欄</title>
+	<style type="text/css">
+		.head{
+			background-color:#003344;color:white;font-weight:bold;font-size:50px;
+			text-align:center;padding:20px;margin-left:auto;margin-right:auto;
+		}
+		
+		.box{
+			width:600px;height:600px;padding:20px;margin:10px;background-color:white;
+            margin-left:auto;margin-right:auto;text-align:center;
+			
+		}
+		.title{
+			font-weight:bold;font-size:35px;text-align:center;
+		}
+		.second{
+			margin-left:12em;
+		}
+		
+		.secsize{
+			font-weight:bold;font-size:20px;text-align:center;padding:3px
+		}
+		
+		@media screen and (max-width:1250px){
+			.head{flex:none;width:90%;justify-content:center;}
+			.box{flex:none;width:70%;justify-content:center;}
+			.second{margin-left:0px;font-size:20px;}
+			
+			
+		}
+		@media screen and (max-width:500px){
+			.head{flex:none;width:90%;justify-content:center;}
+			.box{flex:none;width:90%;justify-content:center;}
+			.second{margin-left:0px;font-size:20px;}
+			
+		}
+		
+	</style>
+</head>
+<body style="margin:0px;background-color:#eeeeee;">
+	<div class="head">公告系統(Announcement)</div>
+	
+				
+	<div class="box">
+		<div class="title">訊息發布介面(Quantity)</div>
+		
+		<hr></hr>
+		
+        
+        <br>
+		<input class="secsize" type="date" >
+        <br>
+		<br>
+        
+        <!-- <input class="secsize" type="password" placeholder="請輸入密碼(password)"> -->
+		<br>
+        <br>
+		<textarea >內文撰寫...</textarea><input class="secsize" type="checkbox" >
+		<br>
+        <br>
+		<br>
+        <br>
+        
+		<span class="second"></span><input class="secsize" type="file" >
+		<br>
+        <br>
+        <br>
+        
+        <br>
+		<button class="secsize" type="button">上傳(Upload)</button>
+	</div>  
+    
+	
+</body>
+</html>
